@@ -1,4 +1,4 @@
-module.exports = json => {
+export default json => {
     if (json.txt) {
         json.txt = json.txt.replace(/\/|@/, c => {
             switch (c) {

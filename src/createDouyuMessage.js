@@ -1,7 +1,7 @@
-const serialize = require('./serialize');
-const {headerLength, totalHeaderLength, offsets, types,}=require('./configs');
+import serialize from './serialize';
+import {headerLength, totalHeaderLength, offsets, types,} from './configs';
 
-module.exports = (json, options = {}) => {
+export default (json, options = {}) => {
     const header = Buffer.alloc(totalHeaderLength);
     const body = serialize(json);
     const bodyLength = Buffer.byteLength(body);

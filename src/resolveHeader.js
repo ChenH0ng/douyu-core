@@ -1,9 +1,9 @@
-const {totalHeaderLength, headerLength, offsets,}=require('./configs');
+import {totalHeaderLength, headerLength, offsets,} from './configs';
 
-module.exports = chunk => {
+export default chunk => {
     if (chunk.length < totalHeaderLength) {
         return {
-            length: -1,
+            length: 0,
             left: null,
         };
     }

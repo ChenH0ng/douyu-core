@@ -1,6 +1,5 @@
-const createDouyuMessage = require('./createDouyuMessage');
-
-class Room {
+import createDouyuMessage from './createDouyuMessage';
+export default class Room {
     constructor(id) {
         this.id = id;
         this.messages = {
@@ -25,4 +24,3 @@ class Room {
         };
     }
 }
-module.exports = Room;

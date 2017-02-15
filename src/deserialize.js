@@ -1,4 +1,4 @@
-module.exports = data => {
+export default data => {
     data = data.slice(0, data.length - 1).split('/');
     data.pop();
     let info = {};
