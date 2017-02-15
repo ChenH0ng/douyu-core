@@ -25,7 +25,7 @@ const client = net.createConnection(options, () => {
                 client.write(room.messages.join);
                 break;
             case 'chatmsg':
-                console.log(`[${result.nn}]: ${result.txt}`);
+                console.log(`${result.nn} > ${result.txt}`);
                 break;
         }
     });
