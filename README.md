@@ -1,4 +1,4 @@
-[![Douyu Logo](https://github.com/ChenH0ng/douyu-core/assets/logo.jpg)](https://www.douyu.com/)
+[![Douyu Logo](https://github.com/ChenH0ng/douyu-core/blob/master/assets/logo.jpg)](https://www.douyu.com/)
 
 ## Installation
 ```
