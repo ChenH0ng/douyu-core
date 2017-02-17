@@ -10,7 +10,7 @@
     "douyutv",
     "douyu core"
   ],
-  "main": "dist/douyu-core.js",
+  "main": "build/douyu-core.js",
   "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.21.0",

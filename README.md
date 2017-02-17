@@ -4,18 +4,27 @@
 ```
 $ npm install douyu-core --save
 ```
+## API
+
+Exports:
+- `Room`
+- `serialize`
+- `deserialize`
+- `DouyuMessageTransform`
+- `createDouyuMessage`
 
 ## Example
 ```
-import net from 'net';
-import {deserialize, DouyuMessageTransform, Room, configs,} from 'douyu-core';
+const net = require('net');
+const {deserialize, DouyuMessageTransform, Room, configs,}  =require('../build/douyu-core');
 const dmt = new DouyuMessageTransform();
+
 const options = {
     host: 'openbarrage.douyutv.com',
     port: 8601,
 };
 const client = net.createConnection(options, () => {
-    const room = new Room(522423);
+    const room = new Room(65962);
     client.write(room.messages.login);
     setInterval(() => client.write(room.messages.heart), configs.heartInterval);
     dmt.on('data', data => {

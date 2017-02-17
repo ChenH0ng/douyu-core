@@ -1,6 +1,3 @@
-/**
- * Created by Exper1ence on 2016/12/26.
- */
 const merge = require('webpack-merge');
 const common = require('./common');
 const build = require('./build');

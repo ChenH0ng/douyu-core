@@ -11,7 +11,7 @@ module.exports = {
         path: output.path,
         filename: '[name].js',
         library: 'douyuCore',
-        libraryTarget:'commonjs-module',
+        libraryTarget:'umd',
     },
     module: {
         rules: [
