@@ -16,7 +16,7 @@ Exports:
 ## Example
 ```
 const net = require('net');
-const {deserialize, DouyuMessageTransform, Room, configs,} = require('../build/douyu-core');
+const {deserialize, DouyuMessageTransform, Room, configs,} = require('douyu-core');
 const dmt = new DouyuMessageTransform();
 
 const options = {
