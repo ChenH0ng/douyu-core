@@ -1,7 +1,5 @@
 [![Douyu Logo](http://139.196.50.70/douyulogo.jpg)](https://www.douyu.com/)
 
-本模块的长远目标是实现所有斗鱼官方客户端的基础功能，目前提供弹幕接收。
-
 ## Installation
 ```
 $ npm install douyu-core --save
@@ -18,7 +16,7 @@ Exports:
 ## Example
 ```
 const net = require('net');
-const {deserialize, DouyuMessageTransform, Room, configs,}  =require('../build/douyu-core');
+const {deserialize, DouyuMessageTransform, Room, configs,} = require('../build/douyu-core');
 const dmt = new DouyuMessageTransform();
 
 const options = {
