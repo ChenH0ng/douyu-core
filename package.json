@@ -1,6 +1,6 @@
 {
   "name": "douyu-core",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Douyu protocol core.",
   "author": "Chen Hong <chenh0ng@outlook.com>",
   "repository": "https://github.com/ChenH0ng/douyu-core",

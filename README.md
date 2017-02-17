@@ -15,6 +15,7 @@ Exports:
 - `deserialize`
 - `DouyuMessageTransform`
 - `createDouyuMessage`
+- `configs`
 
 ## Example
 ```
