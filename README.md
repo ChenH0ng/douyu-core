@@ -1,5 +1,8 @@
 [![Douyu Logo](http://139.196.50.70/douyulogo.jpg)](https://www.douyu.com/)
 
+##Tip
+请先阅读[官方文档](http://dev-bbs.douyutv.com/forum.php?mod=forumdisplay&fid=37)
+
 ## Installation
 ```
 $ npm install douyu-core --save
@@ -24,16 +27,16 @@ const options = {
     port: 8601,
 };
 const client = net.createConnection(options, () => {
-    const room = new Room(65962);
+    const room = new Room(65962);//房间id
     client.write(room.messages.login);
-    setInterval(() => client.write(room.messages.heart), configs.heartInterval);
+    setInterval(() => client.write(room.messages.heart), configs.heartInterval);//心跳包
     dmt.on('data', data => {
         const result = deserialize(data.toString());
         switch (result.type) {
             case 'loginres':
                 client.write(room.messages.join);
                 break;
-            case 'chatmsg':
+            case 'chatmsg'://弹幕消息
                 console.log(`${result.nn} > ${result.txt}`);
                 break;
         }
